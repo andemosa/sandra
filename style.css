@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#root{
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
+}
+
+#image{
+    background-image: url(sandra.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 35%;
+}
+
+#main{
+    height: 100vh;
+    width: 65%;
+}
+
+header{
+    text-align: center;
+    padding-top: 2rem;
+}
+
+main{
+    padding: 3.5rem 10%;
+}
+
+
+h1{
+    font-size: 3rem;
+    color: darkred;
+}
+
+h2{
+    padding-bottom: 2rem;
+    font-size: 2.5rem;
+    color: rgb(110, 22, 22);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0 2rem 0;
+}
+
+label{
+    font-size: 1.15rem;
+    color: #4a5568;
+    margin-bottom: .25rem;
+    line-height: 2;
+    font-weight: 700;
+}
+
+input{
+    font-size: 100%;
+    color: #1a202c;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: .75rem;
+    border: 0px;
+    border-bottom: 2px solid  rgb(179, 39, 15);
+}
+
+form button{
+    background-color: rgb(179, 39, 15);
+    color: #fff;
+    margin-top: 5rem;
+    padding: 1.25rem;
+    font-weight: 700;
+    border: 0 solid #e2e8f0;
+    margin-bottom: 2rem;
+    width: 30%;
+    margin-left: 35%;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    align-content: center;
+    justify-content: center;
+}
+
+nav{
+    padding: 1rem 2rem;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 1.45rem;
+    color: rgb(94, 91, 91);
+}
+
+#confirm{
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media only screen and (max-width: 480px) {
+    #root{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    
+    #image{
+        background-image: url(mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 200px;
+    }
+
+    header{
+        display: none;
+    }
+
+    #main{
+        height: 500px;
+        width: 100vw;
+    }
+
+    main{
+        padding: 1.5rem 5%;
+    }
+
+    h2{
+        color: black;
+        padding-left: 1rem;
+    }
+
+    form{
+        padding: 0.5rem 1rem 1rem 1rem;
+    }
+
+    input{
+        padding: 0.35rem;
+        width: 90%;
+        margin-bottom: .5rem;
+    }
+
+    form button{
+        margin-top: 2rem;
+        margin-bottom: 0rem;
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    footer{
+        display: none;
+    }
+
+    nav{
+        padding: .5rem 1rem;
+    }
+
+    #confirm{
+        display: inline;
+    }
+    
+    #check{
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    #check input{
+        width: 10%;
+        margin-top: 1.5rem;
+    }
+
+    #check label{
+        font-size: 1.15rem;
+        margin-bottom: .25rem;
+        line-height: 1;
+        font-weight: 500;
+        padding-top: 1rem;
+    }
+
+}
+
+
